@@ -1,0 +1,28 @@
+class Students{
+    void answer(){
+        System.out.println("Class of students");
+    }
+    
+}
+class student1 extends Students{
+    void answer(){
+        System.out.println("student1");
+    }
+}
+class student2 extends Students{
+    void answer(){
+        System.out.println("student2");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+       Students s;
+       s = new student1();
+        
+        s.answer();
+        s = new student2();
+        s.answer();
+        
+    }
+}
